@@ -1,0 +1,94 @@
+.nav {
+    background-color: white;
+    padding: 10px 20px;
+    justify-content: space-between;
+    display: flex;
+    box-shadow: var(--nav-shadow);
+    position: sticky;
+    box-sizing: border-box;
+    top: 0px;
+    z-index: 1000;
+}
+
+.img {
+    height: 30px;
+    margin: 10px;
+}
+
+.navItem {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    padding: 10px 20px;
+    font-size: 18px;
+    transition: 0.4s ease;
+}
+
+.navItem:hover {
+    color: var(--bg-detail);
+}
+
+.input {
+    outline: none;
+    padding: 2px 5px;
+    border: none;
+}
+
+.form {
+    display: flex;
+    margin: 10px;
+    border: 1.5px solid black;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.div {
+    display: flex;
+    align-items: center;
+}
+
+.search {
+    height: 27px;
+}
+
+button {
+    padding: 0px;
+    border: none;
+    display: flex;
+    cursor: pointer;
+}
+
+.active {
+    color: var(--bg-detail);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 2px;
+}
+
+@media (min-width:420px) and (max-width: 840px) {
+    .nav {
+        display: block;
+        padding: 10px;
+    }
+
+    .navItem {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 420px) {
+    .nav {
+        display: block;
+        padding: 10px;
+    }
+
+    .img {
+        height: 25px;
+        margin: 7px;
+    }
+
+    .navItem {
+        padding: 7px;
+        font-size: 15px;
+    }
+}

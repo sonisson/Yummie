@@ -1,0 +1,152 @@
+.main {
+    padding: var(--main-padding);
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.container {
+    background-color: var(--bg-container);
+    display: flex;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.container > img {
+    height: 442.5px;
+}
+
+.form {
+    padding: 20px 40px;
+    width: 360px;
+}
+
+.form > h2 {
+    margin: 12px 0px;
+}
+
+.form > input {
+    padding: 6px 0px;
+    outline: none;
+    width: 100%;
+    border: none;
+    border-bottom: 1.5px solid black;
+    color: black;
+    background-color: inherit;
+    font-size: 16px;
+    margin: 12px 0px;
+}
+
+.form > input::placeholder {
+    color: black;
+    font-family: var(--font-family);
+}
+
+.form > button {
+    margin: 24px 0px 20px;
+    background-color: var(--bg-detail);
+    color: white;
+    width: 100%;
+    border-radius: 5px;
+    padding: 5px 0px;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: var(--font-family);
+    display: block;
+}
+
+.register {
+    margin: 20px 0px 12px 0px;
+    text-align: center;
+}
+
+.link {
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.or {
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.forget {
+    text-align: right;
+    margin: 0px;
+}
+
+.google{
+    display: flex;
+    justify-content: center;
+}
+
+.error{
+    color:red;
+    margin-bottom:10px;
+}
+
+@media (min-width:520px) and (max-width:1000px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .container > img {
+        width: 440px;
+        height: auto;
+        order: 2;
+    }
+
+    .form {
+        order: 1;
+    }
+}
+
+@media (max-width:520px) {
+    .form {
+        padding: 25px;
+        width: 250px;
+        order: 1;
+    }
+
+    .form > h2 {
+        margin: 10px 0px;
+        font-size: 18px;
+    }
+
+    .form > input {
+        font-size: 14px;
+        margin: 10px 0px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .container > img {
+        width: 300px;
+        height: auto;
+        order: 2;
+    }
+
+    .form > button {
+        font-size: 14px;
+        margin: 18px 0px;
+    }
+
+    .register {
+        margin: 18px 0px 10px 0px;
+        font-size: 14px;
+    }
+
+    .or {
+        font-size: 14px;
+        margin: 18px 0px;
+    }
+    .error{
+        font-size: 14px;
+    }
+
+    .forget {
+        font-size: 14px;
+    }
+}

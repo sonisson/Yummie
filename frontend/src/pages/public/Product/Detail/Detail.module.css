@@ -1,0 +1,50 @@
+.name,
+.price {
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.description>*:nth-child(odd) {
+    font-weight: 600;
+}
+
+.description p {
+    margin: 0;
+}
+
+.name {
+    margin: 0px 0px 12px;
+}
+
+.price {
+    margin: 12px 0px 15px;
+    color: var(--bg-detail);
+}
+
+.description {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 15px;
+    row-gap: 12px;
+}
+
+@media (max-width: 1000px) {
+
+    .name,
+    .price {
+        font-size: 18px;
+    }
+
+    .name {
+        margin: 0px 0px 10px;
+    }
+
+    .price {
+        margin: 10px 0px 13px;
+    }
+
+    .description {
+        font-size: 15px;
+        row-gap: 8px;
+    }
+}

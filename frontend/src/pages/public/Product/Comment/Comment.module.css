@@ -1,0 +1,113 @@
+.comment>p {
+    font-size: 19px;
+    font-weight: 600;
+    margin: 0px 0px 15px;
+}
+
+.starFilter {
+    margin: 15px 0px 10px;
+}
+
+.timeFilter {
+    margin: 10px 0px 15px;
+}
+
+.starFilter>input,
+.timeFilter>input {
+    display: none;
+}
+
+.starFilter>input:checked+label,
+.timeFilter>input:checked+label {
+    background-color: var(--bg-detail);
+    color: white;
+}
+
+.starIcon {
+    height: 100%;
+}
+
+.starFilter>label,
+.timeFilter>label {
+    border-radius: 5px;
+    padding: 5px 8px;
+    margin: 7px 20px 7px 0px;
+    border: 1.5px solid var(--bg-detail);
+    cursor: pointer;
+    height: 20px;
+    white-space: nowrap;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.commentItem {
+    display: flex;
+    gap: 15px;
+    padding: 10px 0px;
+    border-bottom: var(--line);
+}
+
+.commentItem>img {
+    height: 50px;
+}
+.commentItem p{
+    word-wrap: break-word;
+}
+.commentItem>div{
+    min-width:0px;
+    width:100%;
+}
+.username {
+    margin: 0px;
+    font-weight: 600;
+    color: var(--bg-detail);
+}
+
+.content {
+    margin: 9px 0px;
+}
+
+.rate {
+    display: flex;
+    justify-content: space-between;
+    /* background-color: aqua; */
+}
+
+.rate>div {
+    height: 20px;
+}
+
+.rate>p {
+    margin: 0px;
+    font-style: italic;
+}
+
+.pagination {
+    height: 30px;
+    margin: 30px auto 0px;
+}
+
+.pagination>img {
+    padding: 7px;
+}
+
+.pagination>div {
+    min-width: 30px;
+}
+
+@media(max-width:1000px) {
+    .comment>p {
+        font-size: 18px;
+    }
+
+    .commentItem {
+        font-size: 15px;
+    }
+
+    .starFilter>label,
+    .timeFilter>label {
+        font-size: 15px;
+        height: 17px;
+    }
+}

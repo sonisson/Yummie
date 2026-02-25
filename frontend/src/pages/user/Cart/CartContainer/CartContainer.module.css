@@ -1,0 +1,381 @@
+.cartContainer {
+    background-color: var(--bg-container);
+    border-radius: 5px;
+}
+
+.cartItem {
+    display: grid;
+    grid-template-columns: max-content 150px auto 150px 110px max-content 110px max-content;
+    padding: 10px;
+    align-items: center;
+    justify-items: center;
+    border-bottom: var(--line);
+}
+
+.cartItem p {
+    margin: 0px;
+}
+
+.poster,
+.name,
+.classification,
+.unit,
+.quantity,
+.subTotal {
+    padding: 5px 10px;
+}
+
+.check>input {
+    margin: 0px;
+    cursor: pointer;
+}
+
+.poster>img {
+    width: 100%;
+    display: block;
+    aspect-ratio: 3/2;
+    border-radius: 5px;
+}
+
+.name>p {
+    font-weight: 600;
+}
+
+.classification {}
+
+.classification>button {
+    width: 100%;
+    border: 1.5px solid var(--bg-detail);
+    border-radius: 5px;
+    padding: 3px 5px;
+    color: var(--bg-detail);
+    background-color: inherit;
+}
+
+.classification>p {
+    font-size: 15px;
+}
+
+.classification>* {
+    margin: 5px 0px;
+}
+
+.classification>div:nth-of-type(1)>div {
+    position: absolute;
+    z-index: 999;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    padding:12px;
+    /* padding: 10px; */
+    /* box-sizing: border-box; */
+}
+.classification>div:nth-of-type(2){
+    margin:10px 0px;
+    font-size: 15px;
+}
+.classification>div:nth-of-type(2)>p{
+    margin:5px 0px;
+}
+
+.attributeTable {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 15px;
+    font-size: 15px;
+    
+}
+
+.attributeTable p{
+    margin:0px 6px;
+}
+
+/* ..attributeTable input[type="radio"] */
+
+.classification>div>div>button{
+    background-color: aqua;
+    margin: 15px 0px 0px auto;
+    background-color: var(--bg-detail);
+    color:white;
+    border-radius: 5px;
+    padding:5px 7px;
+}
+
+.attributeTable input {
+    display: none;
+}
+
+.attributeTable input[type='radio']:checked+label {
+    background-color: var(--bg-detail);
+    color: white;
+}
+
+.attributeTable label {
+    border: 1.5px solid var(--bg-detail);
+    border-radius: 5px;
+    padding: 5px;
+    color: var(--bg-detail);
+    margin:0px 6px;
+    height:27px;
+    min-width: 27px;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+/* .attributeTable>div{
+    background-color: beige;
+    height:28px;
+    padding:4px;
+} */
+.attributeTable span{
+    /* display: inline-block; */
+}
+
+.quantity img {
+    border-radius: 5px;
+    border: 1.5px solid var(--bg-detail);
+    padding: 4px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.quantity>div {
+    display: flex;
+    height: 24px;
+}
+
+.quantity input {
+    width: 40px;
+    border: none;
+    background-color: var(--bg-detail);
+    border-radius: 5px;
+    outline: none;
+    color: white;
+    text-align: center;
+    margin: 0px 15px;
+    padding: 0px;
+    font-size: 15px;
+}
+
+.unit,
+.subTotal {
+    color: var(--bg-detail);
+    font-weight: 600;
+}
+
+.action {
+    position: sticky;
+    bottom: 0px;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    background-color: #fbead4;
+    box-shadow: 0px -3px 5px rgba(0, 0, 0, 0.2);
+    margin-top: 30px;
+    border-radius: 5px;
+}
+
+.action>button,
+.order>div,
+.order>button {
+    padding: 5px 8px;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.action>button {
+    border-radius: 5px;
+    background-color: inherit;
+}
+
+.order>div {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.order>button {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: white;
+    background-color: var(--bg-detail);
+}
+
+.action>button,
+.order>div {
+    border: 1.5px solid var(--bg-detail);
+    color: var(--bg-detail);
+}
+
+.order {
+    display: flex;
+}
+
+
+@media (min-width:720px) and (max-width:800px) {
+    .cartItem {
+        grid-template-columns: max-content 140px 140px 110px max-content 110px max-content;
+        font-size: 15px;
+    }
+
+    .check {
+        grid-column: 1;
+        grid-row: 1/ span 2;
+    }
+
+    .poster {
+        grid-column: 2;
+        grid-row: 1/ span 2;
+    }
+
+    .name {
+        grid-column: 3;
+        grid-row: 1;
+        justify-self: left;
+    }
+
+    .classification {
+        grid-column: 3;
+        grid-row: 2;
+        justify-self: left;
+    }
+
+    .unit {
+        grid-column: 4;
+        grid-row: 1 / span 2;
+    }
+
+    .quantity {
+        grid-column: 5;
+        grid-row: 1/span 2;
+    }
+
+    .subTotal {
+        grid-column: 6;
+        grid-row: 1 / span 2;
+    }
+}
+
+@media (min-width:480px) and (max-width:720px) {
+    .cartItem {
+        grid-template-columns: max-content 140px auto 140px;
+        font-size: 14px;
+    }
+
+    .check {
+        grid-column: 1;
+        grid-row: 1/ span 2;
+    }
+
+    .poster {
+        grid-column: 2;
+        grid-row: 1/ span 2;
+    }
+
+    .name {
+        grid-column: 3;
+        grid-row: 1;
+        justify-self: left;
+    }
+
+    .classification {
+        grid-column: 3;
+        grid-row: 2;
+        justify-self: left;
+    }
+
+    .unit {
+        grid-column: 4;
+        grid-row: 1;
+    }
+
+    .quantity {
+        grid-column: 4;
+        grid-row: 2;
+    }
+
+    .subTotal {
+        grid-column: 4;
+        grid-row: 3;
+        display: none;
+    }
+
+    .classification select {
+        font-size: 12px;
+    }
+
+    .quantity>div {
+        height: 22px;
+    }
+
+    .action>button,
+    .order>div,
+    .order>button {
+        font-size: 14px;
+    }
+}
+
+@media (max-width:480px) {
+
+    .cartItem {
+        grid-template-columns: max-content 160px auto;
+        font-size: 13px;
+    }
+
+    .check {
+        grid-column: 1;
+        grid-row: 1/ span 4;
+    }
+
+    .poster {
+        grid-column: 2;
+        grid-row: 1/ span 4;
+    }
+
+    .name {
+        grid-column: 3;
+        grid-row: 1;
+        justify-self: left;
+    }
+
+    .classification {
+        grid-column: 3;
+        grid-row: 2;
+        justify-self: left;
+    }
+
+    .unit {
+        grid-column: 3;
+        grid-row: 3;
+        justify-self: left;
+        font-size: 14px;
+    }
+
+    .quantity {
+        grid-column: 3;
+        grid-row: 4;
+        justify-self: left;
+    }
+
+    .subTotal {
+        grid-column: 2;
+        grid-row: 4;
+        display: none;
+    }
+
+    .classification select {
+        font-size: 12px;
+    }
+
+    .quantity>div {
+        height: 21px;
+    }
+
+    .action>button,
+    .order>div,
+    .order>button {
+        font-size: 13px;
+    }
+}

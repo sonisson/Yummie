@@ -1,0 +1,140 @@
+.orderTable {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 15px;
+}
+
+.orderTable>p {
+    font-weight: 600;
+    margin: 0px;
+}
+
+.orderTable input[type='radio'] {
+    display: none;
+}
+
+.orderTable label {
+    border: 1.5px solid var(--bg-detail);
+    border-radius: 5px;
+    padding: 0px 5px;
+    min-width: 28px;
+    margin-right: 15px;
+    height: 28px;
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.orderTable input[type='radio']:checked+label {
+    background-color: var(--bg-detail);
+    color: white;
+}
+
+.orderTable img {
+    border-radius: 5px;
+    border: 1.5px solid var(--bg-detail);
+    padding: 4px;
+    cursor: pointer;
+}
+
+.quantity {
+    display: flex;
+    height: 28px;
+}
+
+.orderTable input[type="text"] {
+    width: 40px;
+    border: none;
+    background-color: var(--bg-detail);
+    border-radius: 5px;
+    outline: none;
+    color: white;
+    text-align: center;
+    margin: 0px 15px;
+}
+
+.total {
+    margin: 30px 0px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    color: var(--bg-detail);
+    font-size: 22px;
+}
+
+.total::before,
+.total::after {
+    content: "";
+    flex: 1;
+    height: 1.5px;
+    background-color: var(--bg-detail);
+}
+
+.action {
+    display: flex;
+    gap: 15px;
+}
+
+.action img {
+    max-height: 100%;
+}
+
+.action button {
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: inherit;
+    flex: 1;
+    padding: 7px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    height: 40px;
+}
+
+.action>button:nth-of-type(1) {
+    background-color: inherit;
+    border: 1.5px solid var(--bg-detail);
+    gap: 10px;
+    color: var(--bg-detail);
+}
+
+.action>button:nth-of-type(2) {
+    background-color: var(--bg-detail);
+    color: white;
+}
+
+@media(max-width:1000px) {
+    .orderTable {
+        font-size: 15px;
+    }
+
+    .quantity {
+        height: 26px;
+    }
+
+    .orderTable label {
+        min-width: 26px;
+        height: 26px;
+    }
+
+    .total {
+        font-size: 20px;
+    }
+
+    .action button {
+        height: 40px;
+    }
+}
+
+@media(max-width:500px) {
+    .action button {
+        height: 35px;
+        font-size: 15px;
+    }
+}

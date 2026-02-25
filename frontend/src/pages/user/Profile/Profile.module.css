@@ -1,0 +1,83 @@
+
+.form{
+    display: flex;
+    padding:20px 40px;
+}
+.form fieldset{
+    border: none;
+}
+.form label{
+    margin:10px 0px 5px;
+    display: inline-block;
+}
+.form input[type='text'],
+.form input[type='date'],
+.form input[type='email'],
+.form input[type='tel']{
+    border:1.5px solid var(--bg-detail);
+    background-color: inherit;
+    border-radius: 5px;
+    padding:5px 5px;
+    display: block;
+    outline: none;
+}
+.form button{
+    border:1.5px solid var(--bg-detail);
+    background-color: inherit;
+    color:var(--bg-detail);
+    border-radius: 5px;
+    padding:3px 8px;
+    margin-bottom:15px;
+}
+.confirmOverlay{
+    background-color: rgba(0,0,0,0.4);
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    top:0px;
+    left:0px;
+    z-index: 1000;
+}
+.confirmContent{
+    background-color: var(--bg-container);
+    border-radius: 5px;
+    padding:0px 30px;
+}
+.confirmContent section{
+    display: flex;
+    justify-content: center;
+    gap:15px;
+}
+.confirmContent button{
+    border:1.5px solid var(--bg-detail);
+    background-color: inherit;
+    color:var(--bg-detail);
+    border-radius: 5px;
+    padding:3px 7px;
+    margin-bottom:15px;
+}
+.avatar{
+    /* display: flex; */
+}
+.avatar img{
+    width:150px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+.avatar label{
+    display: block;
+    border:1.5px solid var(--bg-detail);
+    border-radius: 5px;
+    width:fit-content;
+    margin: 10px auto;
+    color:var(--bg-detail);
+    padding:3px 7px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.avatar input{
+    display: none;
+}

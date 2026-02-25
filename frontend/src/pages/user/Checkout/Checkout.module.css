@@ -1,0 +1,111 @@
+.main {
+    padding: var(--main-padding);
+}
+
+.container {
+    background-color: var(--bg-container);
+    margin: 0 auto;
+    /* max-width: 1000px; */
+    width:min-content;
+    display: flex;
+    border-radius: 5px;
+}
+.invoice{
+    /* background-color: aqua; */
+    padding:0px 10px;
+}
+.invoiceItem{
+    font-weight: 500;
+    display: grid;
+    grid-template-columns: 50px 120px 200px 150px 100px 60px 100px ;
+    border-bottom: var(--line);
+    align-items: center;
+    padding:10px 0px;
+}
+.img{
+    width:100%;
+    padding:7px;
+    box-sizing: border-box;
+}
+.name{
+    padding:0px 10px;
+}
+.no, .name, .unit, .quantity, .subTotal{
+    margin:0px;
+    text-align: center;
+}
+.classification > p{
+    margin:5px 0px;
+}
+.summary{
+    font-weight: 500;
+    white-space: nowrap;
+    width: min-content;
+    /* background-color: aquamarine; */
+    margin:20px 0px 20px auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap:15px;
+}
+
+.summary>p{
+    margin:0px;
+}
+.price{
+    text-align: right;
+}
+.summary button{
+  grid-column: 1 / span 2;
+  background-color: var(--bg-detail);
+  color:white;
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 5px;
+  justify-content: center;
+  padding: 12px;
+}
+
+.shippingInfor{
+    /* background-color: rgb(235, 149, 43); */
+    margin:0px 25px 20px 30px;
+    /* width:min-content; */
+    width:370px;
+    /* min-width:400px; */
+}
+.shippingInfor h4{
+    font-weight: 500;
+    margin:20px 0px 15px 0px;
+}
+.shippingInfor p{
+    margin:8px 0px;
+}
+.change{
+    cursor: pointer;
+    color:var(--bg-detail);
+}
+.payment{
+    display: flex;
+    gap:15px;
+}
+.payment button{
+    border-radius: 5px;
+    border:1.5px solid var(--bg-detail);
+    color: var(--bg-detail);
+    background-color: inherit;
+    padding:5px 10px;
+    font-size: 15px;
+    white-space: nowrap;
+}
+
+textarea{
+    min-width:100%;
+    resize: vertical;
+    border:1.5px solid var(--bg-detail);
+    outline: none;
+    background-color: inherit;
+    font-size: 15px;
+    min-height:100px;
+    border-radius:5px;
+    padding:5px 7px;
+    box-sizing: border-box;
+}

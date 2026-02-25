@@ -1,0 +1,89 @@
+.pagination {
+    display: flex;
+    text-align: center;
+    width: fit-content;
+    font-weight: 600;
+}
+
+.pagination>img {
+    background-color: rgba(0, 0, 0, 0.55);
+    border-radius: 5px;
+    margin: 0px 8px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.otherPage,
+.currentPage {
+    margin: 0px 8px;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+    border: 1.5px solid var(--bg-detail);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.otherPage {
+    color: var(--bg-detail);
+}
+
+.currentPage {
+    background-color: var(--bg-detail);
+    color: white;
+}
+
+.pagination>span {
+    color: var(--bg-detail);
+    letter-spacing: 1px;
+    padding: 0px 5px;
+}
+
+
+
+/* .pagination {
+    display: flex;
+    text-align: center;
+    margin: 0 auto;
+    width: fit-content;
+    font-weight: 600;
+}
+
+.button {
+    background-color: rgba(0, 0, 0, 0.55);
+    border-radius: 5px;
+    margin: 0px 8px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.otherPage,
+.currentPage {
+    margin: 0px 8px;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+    border: 1.5px solid var(--bg-detail);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.otherPage {
+    color: var(--bg-detail);
+}
+
+.currentPage {
+    background-color: var(--bg-detail);
+    color: white;
+}
+
+.more {
+    color: var(--bg-detail);
+    letter-spacing: 1px;
+    padding: 0px 5px;
+} */
+

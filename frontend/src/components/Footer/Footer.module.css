@@ -1,0 +1,11 @@
+.footer {
+    background-color: lab(0% 0 0 / 0.5);
+    color:white;
+    padding:20px 50px;
+    letter-spacing: 0.5px;
+    /* overflow: auto; */
+    /* box-sizing: border-box; */
+}
+h2{
+    margin:16px 0px;
+}

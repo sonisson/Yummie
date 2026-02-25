@@ -1,0 +1,38 @@
+
+.product{
+    padding:8px;
+    font-size: 13px;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:15px;
+    justify-content: center;
+}
+.recommendationContainer>p{
+    font-size: 19px;
+    margin:0px 0px 15px;
+    font-weight: 600;
+}
+.pagination{
+    height:30px;
+    margin: 30px auto 0px;
+}
+.pagination > img{
+    padding:7px;
+}
+.pagination > div{
+    min-width: 30px;
+}
+
+@media (min-width:790px) and (max-width: 1000px) {
+    .product{
+        font-size: 11px;
+        padding:7px;
+    }
+}
+@media (min-width:500px) and (max-width: 790px) {
+    .container{
+        gap:25px;
+    }
+}

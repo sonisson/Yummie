@@ -1,0 +1,22 @@
+:root {
+	--font-family: 'Segoe UI';
+	--bg-color: #E3BB8E;
+	--bg-container: #FCE0C3;
+	--bg-detail: #D6751A;
+	--line: 1.5px solid #AFAFAF;
+	--nav-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+	--main-padding: 50px 0px;
+}
+#root{
+	min-width:360px;
+}
+
+body {
+	font-family: var(--font-family);
+	margin: 0px;
+	background-color: var(--bg-color);
+}
+
+button{
+  font-family: inherit;
+}

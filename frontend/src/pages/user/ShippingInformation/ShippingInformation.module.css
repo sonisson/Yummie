@@ -1,0 +1,153 @@
+.container{
+    padding:0px 20px;
+}
+.item{
+    border-bottom: var(--line);
+    padding-bottom: 7px;
+}
+.item p{
+    margin:7px;
+    font-size: 15px;
+}
+.container button{
+    border-radius: 5px;
+    color:var(--bg-detail);
+    background-color: inherit;
+    border: 1.5px solid var(--bg-detail);
+    padding:4px 7px;
+    margin:20px auto;
+}
+.action p{
+    display: inline;
+    color:var(--bg-detail);
+    cursor: pointer;
+}
+.formOverlay{
+position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4); /* nền mờ */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+
+}
+
+.formContent{
+    position: relative;
+    background-color: var(--bg-container);
+    border-radius: 5px;
+    max-height:100%;
+    overflow: auto;
+}
+.formContent header{
+    background-color: white;
+    padding:6px;
+    text-align: center;
+    font-weight: 500;
+}
+.formContent form{
+    padding:40px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap:20px;
+}
+
+.name input,
+.tel input,
+.province select,
+.ward select,
+.address input{
+    background-color: inherit;
+    outline: none;
+    border: 1.5px solid var(--bg-detail);
+    display: block;
+    border-radius: 5px;
+    padding:6px;
+    margin-top:7px;
+    box-sizing: border-box;
+    width:100%;
+}
+.formContent label{
+    font-weight: 500;
+}
+.default input{
+    margin:0px 10px 0px 0px;
+}
+.name{
+    grid-column: 1;
+    grid-row:1;
+}
+.tel{
+    grid-column: 1;
+    grid-row: 2;
+}
+.province{
+    grid-column: 2;
+    grid-row: 1;
+}
+.ward{
+    grid-column: 2;
+    grid-row: 2;
+}
+.address{
+    grid-column: 1 / 3;
+    grid-row: 3;
+}
+.default{
+    grid-column: 1 / 3;
+    grid-row: 4;
+}
+.map {
+  height: 200px;
+  grid-column: 1 / 3;
+  grid-row: 5;
+}
+.formAction{
+    display: flex;
+    gap:15px;
+    justify-content: center;
+    grid-column: 1 / 3;
+    grid-row: 6;
+}
+.formAction button{
+    background-color: inherit;
+    border:1.5px solid var(--bg-detail);
+    border-radius:5px;
+    padding:3px 7px;
+    color:var(--bg-detail);
+}
+.deleteOverlay{
+    background-color: rgba(0,0,0,0.4);
+    position: fixed;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.deleteContent{
+    background-color: var(--bg-container);
+    width:300px;
+    text-align: center;
+    border-radius: 5px;
+    padding:20px;
+}
+.deleteContent section{
+    display: flex;
+    justify-content: center;
+    gap:15px;
+}
+.deleteContent button{
+    border: 1.5px solid var(--bg-detail);
+    border-radius: 5px;
+    background-color: inherit;
+    color: var(--bg-detail);
+    padding:3px 7px;
+}
